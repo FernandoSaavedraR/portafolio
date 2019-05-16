@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 reglas : selector + declaracion + propiedad
 selectores: como identificar un elemento
@@ -295,3 +296,302 @@ figure {
 
 /* display block: ocupar todo el ancho posible
 display inline trabaja como texto */
+=======
+/*
+reglas : selector + declaracion + propiedad
+selectores: como identificar un elemento
+          id,tags, clases
+declaraciones: todo lo que está dentro de las llaves de una regla
+propiedades
+valores
+
+descompongamos
+  header{
+    background: pink;
+  }
+regla: es todo
+selector es header
+declaracion es background: pink;
+propiedad es background
+y valor es pink
+
+ selector de hijos
+ body header div nav ol li a
+ llegamos al a que tiene todos esos elementos como padres
+ selector de clase .nombre
+selector de id #nombre */
+/* colores hexadecimales
+#FFFFFF white
+#00000  black
+#FF0000 RED
+#00FF00 GREEN
+#0000FF BLUE */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  /* font-style: italic; */
+  /* si la fuente mas de dos palabras se pone entre comillas */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  color: white;
+  /* 4 valores top right bottom left*/
+  /* 2 valores top/bottom right/left*/
+  /* margin */
+  margin: 0;
+  /* text-transform: uppercase;
+  text-decoration: underline; */
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+.hero {
+  height: 300px;
+  /* background-image: url('../images/hero.jpg'); */
+  background-color: #1b2127;
+  align-items: center;
+  /* width-height */
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: x y */
+  /* background-position-x: right; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  /*  tamaño tipo estilo*/
+  /* border-color:
+  border-width:
+  border-style: */
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.project-course, .project-date, .project-url {
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 20px;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-imageContainer {
+  width: 500px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  background-color: #1b2127;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header figure img {
+  height: 50px;
+}
+
+figure {
+  margin: 0;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ol, .header ul {
+  height: inherit;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ul li {
+  height: inherit;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b2127;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.event-list-title{
+  margin-left: 20px;
+}
+.event {
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f4fbff
+}
+
+.event-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: white;
+}
+
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+.event-description{
+  text-align: left;
+}
+.event-url{
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #056fff;
+  border-radius: 5px;
+}
+.contact{
+  color: white;
+  background-color: #056fff;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-email{
+}
+.form-email input{
+  border-color: gray;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../images/envelope.svg");
+  background-size:15px 15px;
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x:5px;
+}
+.form-email button{
+  display: block;
+  margin-top: 10px:auto;
+  background: transparent;
+  color:white;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 100px;
+}
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.social-link{
+  margin 0 10px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
+.social-link.twitter{
+  background-image: url("../images/twitter.svg");
+
+}
+.social-link.facebook{
+  background-image: url("../images/facebook.svg");
+}
+.social-link.github{
+  background-image: url("../images/github.svg");
+}
+.social-link.instagram{
+  background-image: url("../images/instagram.svg");
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+.hero-image{
+  object-fit: cover;
+}
+
+/* display block: ocupar todo el ancho posible
+display inline trabaja como texto */
+>>>>>>> 31729d5b3c2002a555b2384294c5d3720a093f09

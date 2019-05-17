@@ -190,8 +190,8 @@ figure {
 }
 
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
@@ -361,11 +361,23 @@ figure {
   .project-course, .project-date, .project-url{
     margin: 0.4em 0;
   }
+  .event{
+    width:auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    width: 100%;
+
+  }
 }
 
 @media screen and (max-width:480px) {
   .project-details{
     font-size: 16px;
+  }
+  .event-detail{
+    margin: -2em .5em .5em;
+    padding: 1em;
   }
 }
 

@@ -237,22 +237,46 @@ figure {
 }
 
 .contact {
-  color: white;
   background-color: #056fff;
+  color: white;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.form-email {}
+.social {
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+}
+.social-link.facebook {
+  background-image: url('../images/facebook.svg');
+}
+.social-link.github {
+  background-image: url('../images/github.svg');
+}
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+}
+
 
 .form-email input {
   border-color: gray;
-  border-radius: 5px;
   border-style: solid;
+  border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url("../images/envelope.svg");
+  background-image: url('../images/envelope.svg');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -261,42 +285,18 @@ figure {
 
 .form-email button {
   display: block;
-  margin-top: 10px:auto;
   background: transparent;
   color: white;
-  border-radius: 5px;
   padding: 10px 0;
-  margin-top: 10px;
+  border-radius: 5px;
   width: 100px;
+  margin-top: 10px;
 }
 
 .form-email h3 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.social-link {
-  margin 0 10px;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-size: 50px 50px;
-}
-
-.social-link.twitter {
-  background-image: url("../images/twitter.svg");
-}
-
-.social-link.facebook {
-  background-image: url("../images/facebook.svg");
-}
-
-.social-link.github {
-  background-image: url("../images/github.svg");
-}
-
-.social-link.instagram {
-  background-image: url("../images/instagram.svg");
-}
 
 .container {
   max-width: 1000px;
@@ -315,7 +315,11 @@ figure {
 }
 
 /* desktop first  */
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+  .container{
+    padding: 0 1em;
+  }
+}
 
 @media screen and (max-width:767px) {
   .header{
@@ -369,9 +373,10 @@ figure {
     width: 100%;
 
   }
+
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:550px) {
   .project-details{
     font-size: 16px;
   }
@@ -379,6 +384,24 @@ figure {
     margin: -2em .5em .5em;
     padding: 1em;
   }
+  .contact{
+    height: auto;
+    padding: 1.5em 0;
+    display: block;
+    text-align: center;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .form-email h3{
+    margin-top: 0;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+
 }
 
 @media screen and (max-width:320px) {}
